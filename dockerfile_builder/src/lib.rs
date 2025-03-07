@@ -68,7 +68,7 @@ pub mod instruction;
 pub mod instruction_builder;
 
 /// Dockerfile builder
-#[derive(Debug, Default)]
+#[derive(Debug, Default, Clone)]
 pub struct Dockerfile {
     instructions: Vec<Instruction>,
 }
